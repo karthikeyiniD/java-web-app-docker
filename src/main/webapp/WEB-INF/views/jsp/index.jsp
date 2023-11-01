@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Anand JAVA</title>
+<title>Karthi JAVA</title>
 
 <spring:url value="/resources/core/css/hello.css" var="coreCss" />
 <spring:url value="/resources/core/css/bootstrap.min.css" var="bootstrapCss" />
@@ -14,7 +14,7 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
 	<div class="container">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="#">Anand Java Project</a>
+			<a class="navbar-brand" href="#">Karthi Java Project</a>
 		</div>
 	</div>
 </nav>
@@ -40,7 +40,7 @@
 
 	<div class="row">
 		<div class="col-md-8">
-			<h2>Welcome To Anand Creative Works, Hyderabad,Telangana.</h2>
+			<h2>Welcome To Karthikeyini, Hyderabad,Telangana.</h2>
 			<h3>Contact @ +91-9030444739 </h3>
 		</div>	
 	</div>
@@ -48,7 +48,7 @@
 
 	<hr>
 	<footer>
-		<p>&copy; Anand Creative Works 2023</p>
+		<p>&copy; Karthi Creative Works 2023</p>
 	</footer>
 </div>
 
