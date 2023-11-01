@@ -20,7 +20,7 @@ pipeline {
             steps {
                 script {
                     // Build Docker image
-                    sh "docker build -t karthikeyiniD/java-web-app-docker:Java-Project-${BUILD_NUMBER} ."
+                    sh "docker build -t karthikeyinid/java-web-app-docker:Java-Project-${BUILD_NUMBER} ."
                 }
             }
         }
@@ -29,10 +29,10 @@ pipeline {
             steps {
                 script {
                      withCredentials([string(credentialsId: 'Docker_Hub_Pwds', variable: 'Docker_Hub_Pwds')]) {
-          sh "docker login -u karthikeyiniD -p ${Docker_Hub_Pwds}"
+          sh "docker login -u karthikeyinid -p ${Docker_Hub_Pwds}"
         }
                     // push Docker image
-                    sh "docker push  karthikeyiniD/java-web-app-docker:Java-Project-${BUILD_NUMBER} "
+                    sh "docker push  karthikeyinid/java-web-app-docker:Java-Project-${BUILD_NUMBER} "
                 }
             }
         }
