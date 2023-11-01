@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout from SCM') {
             steps {
-               git url: 'https://github.com/anandasaisoorisetty/java-web-app-docker.git',branch: 'main'
+               git url: 'https://github.com/karthikeyiniD/java-web-app-docker.git',branch: 'main'
             }
         }   
         stage("Maven Clean Package"){
@@ -20,7 +20,7 @@ pipeline {
             steps {
                 script {
                     // Build Docker image
-                    sh "docker build -t anandasaisoorisetty/java-web-app-docker:Java-Project-${BUILD_NUMBER} ."
+                    sh "docker build -t karthikeyiniD/java-web-app-docker:Java-Project-${BUILD_NUMBER} ."
                 }
             }
         }
@@ -29,7 +29,7 @@ pipeline {
             steps {
                 script {
                     // Build Docker image
-                    sh "docker push  anandasaisoorisetty/java-web-app-docker:Java-Project-${BUILD_NUMBER} "
+                    sh "docker push  karthikeyiniD/java-web-app-docker:Java-Project-${BUILD_NUMBER} "
                 }
             }
         }
