@@ -28,7 +28,10 @@ pipeline {
         stage('Docker Login and Push Image to Docker Hub') {
             steps {
                 script {
-                    // Build Docker image
+                     withCredentials([string(credentialsId: 'Docker_Hub_Pwd', variable: 'Docker_Hub_Pwd')]) {
+          sh "docker login -u karthikeyiniD -p ${Docker_Hub_Pwd}"
+        }
+                    // push Docker image
                     sh "docker push  karthikeyiniD/java-web-app-docker:Java-Project-${BUILD_NUMBER} "
                 }
             }
