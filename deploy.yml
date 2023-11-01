@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: tomcat-container 
-          image: karthikeyiniD/java-web-app-docker:Java-Project-buildNumber  
+          image: karthikeyinid/java-web-app-docker:Java-Project-buildNumber  
           ports:
             - containerPort: 8080 
